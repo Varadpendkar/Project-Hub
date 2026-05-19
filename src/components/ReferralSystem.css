@@ -1,0 +1,240 @@
+.referral-system {
+  padding: var(--spacing-4xl) var(--spacing-lg);
+  background: linear-gradient(135deg, #fff9f0 0%, #fef6f1 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.referral-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.referral-header h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 600;
+  color: #0a0a0a;
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -1px;
+}
+
+.referral-header p {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.referral-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3xl);
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.referral-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.referral-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a0a0a;
+  margin-bottom: var(--spacing-xl);
+}
+
+.referral-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.referral-steps li {
+  display: flex;
+  gap: var(--spacing-lg);
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: 12px;
+  border-left: 4px solid #ff6b35;
+  transition: all var(--transition-fast);
+}
+
+.referral-steps li:hover {
+  transform: translateX(8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #ff6b35;
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.referral-steps li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.referral-steps strong {
+  font-size: 14px;
+  color: #0a0a0a;
+  font-weight: 600;
+}
+
+.referral-steps p {
+  font-size: 12px;
+  color: #555555;
+  line-height: 1.4;
+}
+
+.referral-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.referral-tiers {
+  background: white;
+  border: 2px solid #e5e5e5;
+  border-radius: 16px;
+  padding: var(--spacing-2xl);
+}
+
+.referral-tiers h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a0a0a;
+  margin-bottom: var(--spacing-sm);
+}
+
+.tier-subtitle {
+  font-size: 13px;
+  color: #555555;
+  margin-bottom: var(--spacing-xl);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.tier-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.tier-card {
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+
+.tier-card:hover {
+  transform: translateY(-4px);
+  border-color: #4f46e5;
+  box-shadow: 0 8px 16px rgba(79, 70, 229, 0.1);
+}
+
+.tier-projects {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555555;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-md);
+}
+
+.tier-commission {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff6b35;
+  margin-bottom: var(--spacing-md);
+}
+
+.tier-example {
+  font-size: 12px;
+  color: #0a0a0a;
+  font-weight: 500;
+  background: white;
+  padding: var(--spacing-md);
+  border-radius: 8px;
+}
+
+.referral-cta {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.referral-btn {
+  flex: 1;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: white;
+  border: none;
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.referral-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(255, 107, 53, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .referral-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .referral-system {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .referral-header h2 {
+    font-size: 28px;
+  }
+
+  .tier-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .referral-steps li {
+    padding: var(--spacing-md);
+  }
+
+  .step-num {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .referral-tiers {
+    padding: var(--spacing-lg);
+  }
+}

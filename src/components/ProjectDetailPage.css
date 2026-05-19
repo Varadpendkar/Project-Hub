@@ -1,0 +1,488 @@
+.project-detail-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 80px 24px;
+}
+
+.detail-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.detail-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 40px;
+  padding: 12px 0;
+}
+
+.detail-breadcrumb button {
+  background: none;
+  border: none;
+  color: #111111;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity var(--transition-fast);
+  padding: 0;
+  text-decoration: underline;
+}
+
+.detail-breadcrumb button:hover {
+  opacity: 0.7;
+}
+
+.detail-breadcrumb span {
+  color: #999999;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.detail-images {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-image {
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #f0faf7 0%, #f4f4f4 100%);
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 300;
+  color: #999999;
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.thumbnail {
+  aspect-ratio: 1;
+  background: #f4f4f4;
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  border-color: #111111;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0a0a0a;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.detail-branch {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999999;
+  margin-bottom: 12px;
+}
+
+.detail-metadata {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.metadata-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metadata-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #999999;
+}
+
+.metadata-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0a0a0a;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #f0faf7;
+  border-radius: 12px;
+}
+
+.price-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.delivery-badge {
+  background-color: #111111;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.add-to-cart-btn {
+  background-color: #111111;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all var(--transition-fast);
+  min-height: 48px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.additional-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 0;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #555555;
+}
+
+.option-item input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.detail-section {
+  padding: 24px;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.detail-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a0a0a;
+  margin-bottom: 16px;
+}
+
+.tech-stack-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-pill {
+  background-color: #f4f4f4;
+  color: #555555;
+  border: 1px solid #e5e5e5;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.tech-pill:hover {
+  border-color: #111111;
+  background-color: white;
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.module-item {
+  background-color: white;
+  padding: 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #555555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.module-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #111111 0%, #333333 100%);
+  color: white;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.requirements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #555555;
+}
+
+.requirement-item::before {
+  content: "✓";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #f0fdf4;
+  color: #22c55e;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.related-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.related-card {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.related-card:hover {
+  border-color: #111111;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.related-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a0a0a;
+  margin-bottom: 6px;
+}
+
+.related-card p {
+  font-size: 11px;
+  color: #555555;
+  line-height: 1.4;
+}
+
+.detail-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e5e5;
+  flex-wrap: wrap;
+}
+
+.footer-action-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+}
+
+.github-link {
+  background: linear-gradient(135deg, #111111 0%, #333333 100%);
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.github-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.download-guide-btn {
+  background-color: white;
+  color: #111111;
+  border: 1px solid #111111;
+}
+
+.download-guide-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.not-found {
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.not-found h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0a0a0a;
+  margin-bottom: 12px;
+}
+
+.not-found p {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 24px;
+}
+
+.back-btn {
+  background-color: #111111;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.back-btn:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .detail-layout {
+    gap: 40px;
+  }
+
+  .metadata-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .modules-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-detail-page {
+    padding: 40px 16px;
+  }
+
+  .detail-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .detail-title {
+    font-size: 24px;
+  }
+
+  .metadata-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .related-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-footer {
+    flex-direction: column;
+  }
+
+  .footer-action-btn,
+  .github-link,
+  .download-guide-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-detail-page {
+    padding: 24px 12px;
+  }
+
+  .detail-title {
+    font-size: 20px;
+  }
+
+  .thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .price-section {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .modules-grid {
+    grid-template-columns: 1fr;
+  }
+}
